@@ -1,28 +1,28 @@
-package buble
+package sort_02_shaker
 
 import org.junit.Assert.*
 import java.util.*
+import org.junit.Before
+import org.junit.Test
 
 /**
- * Created by btow on 06.11.2018.
+ * Created by btow on 07.11.2018.
  */
-class BubleTest : Exception() {
+class ShakerTest : Exception() {
 
     lateinit var noSortAfrray: CharArray
     lateinit var expSortArray: CharArray
 
-    @org.junit.Before
+    @Before
     fun setUp() {
         noSortAfrray = charArrayOf('S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E')
         expSortArray = noSortAfrray.copyOf()
         Arrays.sort(expSortArray)
     }
 
-    @org.junit.Test
+    @Test
     fun getSortedArray() {
-
-        val actSortedArray = Buble(noSortAfrray).getSortedArray()
-
+        val actSortedArray = Shaker(noSortAfrray).getSortedArray()
         assertArrayEquals(expSortArray, actSortedArray)
     }
 }

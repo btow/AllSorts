@@ -1,7 +1,8 @@
-package buble
+package sort_00_buble
 
 /**
  * Created by btow on 06.11.2018.
+ * Пузырьковая сортировка O(n^2)
  */
 class Buble(var charArray: CharArray) {
 
