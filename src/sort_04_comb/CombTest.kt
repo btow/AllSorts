@@ -8,6 +8,7 @@ import java.util.*
 
 /**
  * Created by btow on 07.11.2018.
+ * гребешковая сортировка вставками от O(n) до O(n^2), в среднем O(n log n)
  */
 class CombTest : Exception() {
 

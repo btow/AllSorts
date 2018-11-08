@@ -8,6 +8,7 @@ import java.util.*
 
 /**
  * Created by btow on 08.11.2018.
+ * Сортировка вставками (Шелла) до O(log n)
  */
 class InsertioninShellTest : Exception() {
 

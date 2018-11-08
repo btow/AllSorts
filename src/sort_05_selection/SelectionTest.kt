@@ -8,6 +8,7 @@ import java.util.*
 
 /**
  * Created by btow on 07.11.2018.
+ * Сортировка выбором O(n^2)
  */
 class SelectionTest : Exception() {
 

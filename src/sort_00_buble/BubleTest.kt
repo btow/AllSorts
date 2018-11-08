@@ -5,6 +5,7 @@ import java.util.*
 
 /**
  * Created by btow on 06.11.2018.
+ * Пузырьковая сортировка вставками O(n^2)
  */
 class BubleTest : Exception() {
 

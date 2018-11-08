@@ -7,6 +7,7 @@ import org.junit.Test
 
 /**
  * Created by btow on 07.11.2018.
+ * Шейкерная сортировка вставками O(n^2)
  */
 class ShakerTest : Exception() {
 

@@ -8,6 +8,7 @@ import java.util.*
 
 /**
  * Created by btow on 07.11.2018.
+ * Чётно-нечётная сортировка вставками O(n^2)
  */
 class EvenOddTest : Exception() {
 
