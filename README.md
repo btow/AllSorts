@@ -1,3 +1,3 @@
 # AllSorts
-EN: Examples of different sorting algorithms implementation
-RU: Примеры реализации различных алгоритмов сортировки
+<p>EN: Examples of different sorting algorithms implementation
+<p>RU: Примеры реализации различных алгоритмов сортировки
