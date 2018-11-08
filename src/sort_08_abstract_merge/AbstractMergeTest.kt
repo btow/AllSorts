@@ -1,15 +1,17 @@
-package sort_02_shaker
+package sort_08_abstract_merge
 
 import general_enviropment.SetUpTestEnvironment
-import org.junit.Assert.*
 import org.junit.Before
 import org.junit.Test
 
+import org.junit.Assert.*
+import java.util.*
+
 /**
- * Created by btow on 07.11.2018.
- * Шейкерная сортировка вставками O(n^2)
+ * Created by btow on 08.11.2018.
+ * Сортировка вставками (Шелла) до O(log n)
  */
-class ShakerTest : Exception() {
+class AbstractMergeTest : Exception() {
 
     lateinit var noSortArray: CharArray
     lateinit var expSortArray: CharArray
@@ -23,7 +25,7 @@ class ShakerTest : Exception() {
 
     @Test
     fun getSortedArray() {
-        val actSortedArray = Shaker(noSortArray).getSortedArray()
+        val actSortedArray = AbstractMerge(noSortArray).getSortedArray()
         assertArrayEquals(expSortArray, actSortedArray)
     }
 }

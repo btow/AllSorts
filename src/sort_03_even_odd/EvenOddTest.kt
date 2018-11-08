@@ -1,5 +1,6 @@
 package sort_03_even_odd
 
+import general_enviropment.SetUpTestEnvironment
 import org.junit.Before
 import org.junit.Test
 
@@ -17,9 +18,9 @@ class EvenOddTest : Exception() {
 
     @Before
     fun setUp() {
-        noSortArray = charArrayOf('S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E')
-        expSortArray = noSortArray.copyOf()
-        Arrays.sort(expSortArray)
+        val testEnvironment = SetUpTestEnvironment()
+        noSortArray = testEnvironment.noSortArray
+        expSortArray = testEnvironment.expSortArray
     }
 
     @Test

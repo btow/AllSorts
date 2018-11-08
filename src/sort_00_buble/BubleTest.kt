@@ -1,5 +1,6 @@
 package sort_00_buble
 
+import general_enviropment.SetUpTestEnvironment
 import org.junit.Assert.*
 import java.util.*
 
@@ -14,9 +15,9 @@ class BubleTest : Exception() {
 
     @org.junit.Before
     fun setUp() {
-        noSortArray = charArrayOf('S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E')
-        expSortArray = noSortArray.copyOf()
-        Arrays.sort(expSortArray)
+        val testEnvironment = SetUpTestEnvironment()
+        noSortArray = testEnvironment.noSortArray
+        expSortArray = testEnvironment.expSortArray
     }
 
     @org.junit.Test
