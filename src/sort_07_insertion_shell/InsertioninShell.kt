@@ -14,7 +14,7 @@ class InsertioninShell(var charArray: CharArray) {
         while (step > 0) {
             for (i in step..end) {
                 for (j in i downTo step step step){
-                    var tmp = charArray[j]
+                    val tmp = charArray[j]
                     if (charArray[j] < charArray[j - step]) {
                         charArray[j] = charArray[j - step]
                         charArray[j - step] = tmp
